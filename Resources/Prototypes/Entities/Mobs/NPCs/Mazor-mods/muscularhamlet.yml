@@ -1,0 +1,65 @@
+
+
+  #автор: terminator2000
+- type: entity
+  name:  Мускулистый Гамлет
+  parent: MobHamsterHamlet
+  id: MobHamsterMuscularHamlet
+  description: Пришел наказать "всех любителей" животных после того как съел пару тблеток в мед-отделе. НЕ КЛАДИТЕ ЕГО В СУМКУ!
+  components:
+  - type: Sprite
+    sprite: Textures\Mobs\Animals\Mazor-mods\muscularhamlet.rsi
+    scale: 1.2, 1.2
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: regalrat
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Мускулистый Гамлет
+    description: О боже! Как можно было его довести до этого...
+  - type: GhostTakeoverAvailable
+  - type: InteractionPopup
+    successChance: 1
+    interactSuccessString: petting-success-hamster
+    interactFailureString: petting-failure-hamster
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      path: /Audio/Animals/fox_squeak.ogg
+  - type: Butcherable
+    spawned:
+    - id: FoodMeat
+      amount: 1
+  - type: Grammar
+    attributes:
+      proper: true
+      gender: male
+  - type: Tag
+    tags:
+    - CannotSuicide
+    - Hamster
+    - VimPilot
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3.00
+    baseSprintSpeed : 3.50
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh1.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 20
+        Piercing: 8
+  - type: Hands
+  - type: Inventory
+  - type: InventorySlots
+  - type: ContainerContainer
+  - type: Item
+    size: 100
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      250: Dead

@@ -1,0 +1,32 @@
+- type: reagent
+  id: Alpha 
+  name: Alpha
+  group: Elements
+  desc: Mocks the blessings of nature
+  physicalDesc: reagent-physical-desc-shiny
+  flavor: metallic
+  color: "#c6c8cc"
+  meltingPoint: 180.5
+  boilingPoint: 1330.0
+  metabolisms:
+    Poison:
+      metabolismRate: 0.1
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 1
+        - !type:OrganType
+          type: Human # Applying damage to the mobs with lower metabolism capabilities
+        damage:
+          types:
+            Poison: 4
+      - !type:Emote
+        emote: Scream
+        probability: 0.05
+      - !type:Emote
+        emote: Laugh
+        probability: 0.05
+      - !type:ChangePrototype
+        polymorph prototype: MuscularHamlet
+      

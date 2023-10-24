@@ -81,5 +81,3 @@
     quickEquip: false
     slots:
     - back
-  - type: UseDelay
-    delay: 1

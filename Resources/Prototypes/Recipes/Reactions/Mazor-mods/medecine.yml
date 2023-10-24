@@ -1,0 +1,13 @@
+- type: reaction
+  id: Alpha
+  reactants:
+    SpaceDrugs:
+      amount: 2
+    Ephedrine:
+      amount: 5
+    GorilaBlood:
+      amount: 10
+    ChloralHydrate:
+      amount: 1
+  products:
+    Alpha: 5

@@ -702,6 +702,7 @@
       amount: 4
   - type: Bloodstream
     bloodMaxVolume: 300
+    bloodReagent: GorilaBlood
     # if you fuck with the gorilla he will harambe you
   - type: MeleeWeapon
     damage:
