@@ -27,6 +27,6 @@
       - !type:Emote
         emote: Laugh
         probability: 0.05
-      - !type:ChangePrototype
-        polymorph prototype: MuscularHamlet
+      - !type:Polymorph
+        prototype: MuscularHamlet
       

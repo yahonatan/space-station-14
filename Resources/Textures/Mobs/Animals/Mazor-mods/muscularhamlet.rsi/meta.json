@@ -1,21 +1,22 @@
 {
-  "version": 1,
-  "size": {
-    "x": 32,
-    "y": 32
-  },
-  "license": "CC-BY-NC-SA-4.0",
-  "copyright": "Created by Terminator2000"
-  "states": [
-    {
-      "name": "dead"
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
     },
-	{
-      "name": "icon"
-    },
-    {
-      "name": "regalrat",
-      "directions": 4
-    }
-  ]
+    "license": "CC-BY-NC-SA-4.0",
+    "copyright": "Termonator2000",
+    "states": [
+        {
+            "name": "dead"
+        },
+        {
+            "name": "icon"
+        },
+        {
+            "name": "regalrat",
+            "directions": 4
+        }
+    ]
 }
+

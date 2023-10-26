@@ -9,10 +9,8 @@
   components:
   - type: Sprite
     sprite: Textures\Mobs\Animals\Mazor-mods\muscularhamlet.rsi
-    scale: 1.2, 1.2
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base"]
-      state: regalrat
+    scale: 1.2, 1.2   
+    
   - type: GhostRole
     makeSentient: true
     allowSpeech: true
